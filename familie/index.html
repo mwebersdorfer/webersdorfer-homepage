@@ -11,21 +11,33 @@
 <link rel="stylesheet" href="../style.css">
 <link rel="icon" href="data:,">
 <style>
-.family-page .family-sections{display:flex;flex-wrap:wrap;gap:12px 28px;padding:22px var(--edge);border-bottom:1px solid var(--hairline)}
-.family-page .family-sections a{font-size:14px;color:#426044;text-decoration:none}
-.family-page .family-sections a:hover{text-decoration:underline}
-.family-page .family-block{padding-top:36px;padding-bottom:36px;scroll-margin-top:100px}
-.family-page .family-block+.family-block{border-top:0}
-.family-page .section-title{font:34px/1.15 Georgia,serif;color:#21372a;margin:0 0 16px}
-.family-page .family-eyebrow{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#426044;margin:0 0 10px}
-.family-page .family-copy{max-width:68ch;margin:0 0 15px}
-.family-page .family-empty{max-width:68ch;font-size:14px;color:#426044;margin:0 0 18px}
-.family-page .family-tint{background:#eaece0;max-width:none}
-.family-page .family-action{display:inline-flex;align-items:center;gap:12px;padding:10px 16px;border:1px solid #426044;border-radius:4px;color:#21372a;text-decoration:none;font:14px/1.4 Arial,sans-serif}
-.family-page .family-action:hover{background:#183323;border-color:#183323;color:#fff}
-.family-page .family-preview-note{padding:22px var(--edge);font-size:13px;color:#426044}
-.family-page .family-preview-note p{margin:0;max-width:68ch}
-@media(max-width:650px){.family-page .family-block{padding-top:30px;padding-bottom:30px}.family-page .section-title{font-size:30px}.family-page .family-sections{gap:12px 20px}}
+.family-page .page-hero{padding-top:110px;padding-bottom:24px}
+.family-page .page-eyebrow{margin-bottom:8px}
+.family-page .page-title{font-size:36px;line-height:1.15;max-width:none;margin-bottom:10px}
+.family-page .page-lede{font-size:16px;max-width:none}
+.family-page .page-hero .back-link{margin-top:12px!important;font-size:13px}
+.family-dashboard{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:var(--container);padding:24px var(--edge) 12px;margin:auto}
+.family-tile{padding:22px 24px;background:#f0ebdc;border-radius:8px;min-width:0}
+.family-tile.tile-green{background:#eaece0}
+.tile-heading{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.tile-heading h2{font:27px/1.15 Georgia,serif;color:#21372a;margin:0}
+.tile-icon{width:26px;height:26px;flex-shrink:0;color:#426044}
+.family-tile p{font-size:14px;line-height:1.5;margin:0 0 12px;max-width:65ch}
+.family-tile .tile-muted{color:#426044;font-size:13px}
+.calendar-empty{display:flex;align-items:center;gap:16px;margin-top:16px}
+.calendar-marker{width:56px;flex-shrink:0;text-align:center;border:1px solid #42604440;border-radius:5px;background:#f8f5ec;overflow:hidden}
+.calendar-marker span{display:block;background:#426044;color:#fff;font:9px/1.8 Arial,sans-serif;letter-spacing:1px}
+.calendar-marker strong{display:block;font:28px/1.3 Georgia,serif;padding:3px}
+.calendar-empty>div>strong{font-size:14px;font-weight:500}
+.calendar-empty p{font-size:13px;margin:4px 0 0;color:#426044}
+.album-topics{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.album-topics span{padding:4px 9px;background:#f8f5ec;border-radius:4px;font-size:12px;color:#426044}
+.family-action{display:inline-flex;align-items:center;gap:12px;padding:8px 12px;border:1px solid #426044;border-radius:4px;color:#21372a;text-decoration:none;font:13px/1.4 Arial,sans-serif}
+.family-action:hover{background:#183323;border-color:#183323;color:#fff}
+.family-tile .upload-status{display:inline-block;padding:4px 9px;background:#f8f5ec;border-radius:4px;color:#426044;font-size:12px;margin-bottom:8px}
+.family-preview-note{padding:8px var(--edge) 16px;color:#426044;font-size:12px}
+.family-preview-note p{margin:0}
+@media(max-width:650px){.family-dashboard{grid-template-columns:1fr;padding-top:18px}.family-page .page-title{font-size:30px}.family-tile{padding:20px}.tile-heading h2{font-size:25px}}
 </style>
 </head>
 <body class="family-page">
@@ -86,7 +98,7 @@
   <section class="page-hero">
     <div class="page-hero-inner">
       <p class="page-eyebrow">Familienbereich</p>
-      <h1 class="page-title">Willkommen in unserem Familienbereich</h1>
+      <h1 class="page-title">Willkommen bei uns</h1>
       <p class="page-lede">Ein Ort für gemeinsame Erinnerungen, Neuigkeiten und die nächsten Treffen.</p>
       <a class="back-link" href="../" style="margin-top: 20px;">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 8H3M7 4L3 8l4 4"/></svg>
@@ -95,46 +107,32 @@
     </div>
   </section>
 
-  <nav class="family-sections" aria-label="Bereiche für die Familie">
-    <a href="#aktuelles">Aktuelles</a>
-    <a href="#termine">Nächste Termine</a>
-    <a href="#alben">Unsere Alben</a>
-    <a href="#beisteuern">Bilder &amp; Dateien beisteuern</a>
-  </nav>
-
-  <section class="section family-block" id="aktuelles">
-    <p class="family-eyebrow">Neuigkeiten</p>
-    <h2 class="section-title">Aktuelles</h2>
-    <p class="family-copy">Hier gibt es künftig kurze Mitteilungen und Hinweise auf neue Alben – damit ihr auf einen Blick seht, was hinzugekommen ist.</p>
-    <p class="family-empty">Noch keine Neuigkeiten eingetragen.</p>
-  </section>
-
-  <section class="section family-block family-tint" id="termine">
-    <p class="family-eyebrow">Gemeinsame Zeit</p>
-    <h2 class="section-title">Nächste Termine</h2>
-    <p class="family-copy">Geburtstage, Familientreffen und gemeinsame Ausflüge – hier findet ihr künftig die nächsten Termine.</p>
-    <p class="family-empty">Sobald ein Termin feststeht, findet ihr hier Datum, Ort und die wichtigsten Informationen.</p>
-  </section>
-
-  <section class="section family-block" id="alben">
-    <p class="family-eyebrow">Gemeinsame Erinnerungen</p>
-    <h2 class="section-title">Unsere Alben</h2>
-    <p class="family-copy">Weihnachten, Ostern, Familientreffen oder Urlaub: Fotos und Videos bekommen hier ihren Platz, geordnet nach Anlass und Jahr.</p>
-    <p class="family-empty">Die ersten Alben folgen.</p>
-    <a class="family-action" href="galerie/">Zur Galerie <span aria-hidden="true">→</span></a>
-  </section>
-
-  <section class="section family-block family-tint" id="beisteuern">
-    <p class="family-eyebrow">Erinnerungen teilen</p>
-    <h2 class="section-title">Bilder &amp; Dateien beisteuern</h2>
-    <p class="family-copy">Ihr habt Fotos, Videos oder andere Dateien für unsere Sammlung? Hier könnt ihr sie später mit einem kurzen Hinweis zum Anlass einreichen.</p>
-    <p class="family-copy">Die Beiträge werden zuerst von Marc gesichtet und anschließend in die passenden Alben aufgenommen.</p>
-    <p class="family-empty">Der Upload wird nach Einrichtung des Zugangsschutzes freigeschaltet.</p>
-  </section>
-
-  <aside class="family-preview-note">
-    <p>Hier entsteht unser Familienbereich. Private Inhalte folgen nach Einrichtung des Zugangsschutzes.</p>
-  </aside>
+  <div class="family-dashboard">
+    <section class="family-tile tile-green" id="termine">
+      <div class="tile-heading"><svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h2M15 14h2M7 17h2"/></svg><h2>Nächste Termine</h2></div>
+      <p>Geburtstage, Treffen und gemeinsame Ausflüge.</p>
+      <div class="calendar-empty"><div class="calendar-marker" aria-hidden="true"><span>TERMIN</span><strong>–</strong></div><div><strong>Noch keine Termine eingetragen</strong><p>Hier stehen künftig Datum, Ort und Anlass der nächsten Treffen.</p></div></div>
+    </section>
+    <section class="family-tile" id="alben">
+      <div class="tile-heading"><svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="9" r="1.5"/><path d="m3 17 6-5 4 3 4-5 4 5"/></svg><h2>Unsere Alben</h2></div>
+      <p>Fotos und Videos, geordnet nach Anlass und Jahr.</p>
+      <div class="album-topics" aria-label="Geplante Albumthemen"><span>Weihnachten</span><span>Ostern</span><span>Familientreffen</span></div>
+      <p class="tile-muted">Die ersten Alben folgen.</p>
+      <a class="family-action" href="galerie/">Alle Alben <span aria-hidden="true">→</span></a>
+    </section>
+    <section class="family-tile" id="aktuelles">
+      <div class="tile-heading"><svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg><h2>Aktuelles</h2></div>
+      <p>Neue Alben und kurze Nachrichten aus der Familie.</p>
+      <p class="tile-muted">Noch keine Neuigkeiten eingetragen.</p>
+    </section>
+    <section class="family-tile tile-green" id="beisteuern">
+      <div class="tile-heading"><svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V3m-4 4 4-4 4 4M4 15v6h16v-6"/></svg><h2>Bilder &amp; Dateien beisteuern</h2></div>
+      <p>Erinnerungen einreichen – Marc sichtet die Beiträge und ordnet sie den passenden Alben zu.</p>
+      <p class="upload-status">Upload folgt</p>
+      <p class="tile-muted">Freischaltung nach Einrichtung des Zugangsschutzes.</p>
+    </section>
+  </div>
+  <aside class="family-preview-note"><p>Vorschau: Private Inhalte folgen nach Einrichtung des Zugangsschutzes.</p></aside>
 
 </main>
 
