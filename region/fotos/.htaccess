@@ -1,0 +1,4 @@
+# Automatische Verzeichnisanzeige für die Impressionen-Fotostrecke.
+Options +Indexes
+IndexOptions FancyIndexing
+IndexIgnore .htaccess

@@ -1,0 +1,7 @@
+# Automatische Verzeichnisanzeige für die Fotogalerie.
+# Der bestehende Passwortschutz aus /familie/.htaccess gilt weiterhin
+# (Apache wendet .htaccess-Dateien kaskadierend an) — diese Datei fügt
+# nur die Indizierung hinzu, ohne die Zugriffsbeschränkung zu berühren.
+Options +Indexes
+IndexOptions FancyIndexing
+IndexIgnore .htaccess

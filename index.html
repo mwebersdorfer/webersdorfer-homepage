@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webersdorfer.de — Familie, Beruf, Natur, Perspektiven</title>
+<meta name="description" content="Die persönliche Seite von Marc Webersdorfer: berufliche Einblicke, die Region am Kühkopf und ein geschützter Bereich für die Familie.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a class="brand" href="/">Webersdorfer.de</a>
+
+    <nav class="primary-nav" aria-label="Hauptnavigation">
+      <a href="/" aria-current="page">Home</a>
+      <a href="/ueber-mich/">Über mich</a>
+      <a href="/projekte/">Beruf &amp; Projekte</a>
+      <a href="/region/">Region</a>
+      <a href="/kontakt/">Kontakt</a>
+    </nav>
+
+    <div class="nav-right">
+      <span class="nav-divider" aria-hidden="true"></span>
+      <a class="family-pill" href="/familie/">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <rect x="4.5" y="9" width="11" height="8" rx="1.4"/>
+          <path d="M7 9V6.5a3 3 0 0 1 6 0V9"/>
+        </svg>
+        Familienbereich
+      </a>
+      <a class="family-pill" href="/privat/">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <circle cx="7.5" cy="12.5" r="3"/>
+          <path d="M9.7 10.3L16 4M12.8 7.2l1.7 1.7M15.3 4.7L17 6.4"/>
+        </svg>
+        Privatbereich
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menü öffnen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+  <div class="mobile-nav-head">
+    <span class="brand">Webersdorfer.de</span>
+    <button class="nav-toggle mobile-nav-close" type="button" aria-label="Menü schließen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/ueber-mich/">Über mich</a></li>
+    <li><a href="/projekte/">Beruf &amp; Projekte</a></li>
+    <li><a href="/region/">Region</a></li>
+    <li><a href="/kontakt/">Kontakt</a></li>
+  </ul>
+  <a class="family-pill" href="/familie/">
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+      <rect x="4.5" y="9" width="11" height="8" rx="1.4"/>
+      <path d="M7 9V6.5a3 3 0 0 1 6 0V9"/>
+    </svg>
+    Familienbereich
+  </a>
+  <a class="family-pill" href="/privat/">
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+      <circle cx="7.5" cy="12.5" r="3"/>
+      <path d="M9.7 10.3L16 4M12.8 7.2l1.7 1.7M15.3 4.7L17 6.4"/>
+    </svg>
+    Privatbereich
+  </a>
+</nav>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <picture>
+        <source media="(max-width: 720px)" srcset="images/hero-bg-mobile.webp" type="image/webp">
+        <source media="(max-width: 720px)" srcset="images/hero-bg-mobile.jpg" type="image/jpeg">
+        <source srcset="images/hero-bg.webp" type="image/webp">
+        <img src="images/hero-bg.jpg" alt="" loading="eager" fetchpriority="high" width="1672" height="941">
+      </picture>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-inner fade-up">
+        <p class="eyebrow">Familie · Beruf · Natur · Perspektiven</p>
+        <h1 class="hero-title">Webersdorfer.de</h1>
+        <p class="hero-sub">Ein Ort für Familie, berufliche Einblicke und alles, was mich bewegt.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="/familie/">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            Zum Familienbereich
+          </a>
+          <a class="btn-ghost" href="/ueber-mich/">
+            Mehr über mich
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-strip">
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="8.5" cy="8" r="2.6"/>
+            <path d="M3.5 18c0-2.8 2.2-4.8 5-4.8s5 2 5 4.8"/>
+            <circle cx="16" cy="8.5" r="2.1"/>
+            <path d="M14.8 13.6c2.2.3 3.7 2 3.7 4.4"/>
+          </svg>
+        </div>
+        <h3>Familie</h3>
+        <p>Ein geschützter Bereich nur für uns.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3.5" y="8" width="17" height="11" rx="1.5"/>
+            <path d="M8.5 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/>
+            <path d="M3.5 13h17"/>
+          </svg>
+        </div>
+        <h3>Beruf &amp; Projekte</h3>
+        <p>Einblicke in meinen Werdegang und Projekte.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 3c3.5 2.4 5.5 5.7 5.5 9.2A5.5 5.5 0 0 1 12 17.7a5.5 5.5 0 0 1-5.5-5.5C6.5 8.7 8.5 5.4 12 3Z"/>
+            <path d="M12 12v6.5"/>
+          </svg>
+        </div>
+        <h3>Region</h3>
+        <p>Verbunden mit dem Kühkopf und unserer Heimat.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3.5" y="5.5" width="17" height="13" rx="1.5"/>
+            <path d="M4 6.5l8 6.5 8-6.5"/>
+          </svg>
+        </div>
+        <h3>Kontakt</h3>
+        <p>Einfach und direkt in Verbindung treten.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-row">
+    <span>© 2026 Webersdorfer.de</span>
+    <div class="footer-links">
+      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
