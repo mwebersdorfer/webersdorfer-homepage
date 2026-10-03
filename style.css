@@ -407,6 +407,8 @@ textarea:focus-visible{
   gap: 0;
 }
 .feature-item{
+  display: block;
+  text-decoration: none;
   padding: 0 32px;
   border-left: 1px solid var(--onphoto-line-soft);
 }
