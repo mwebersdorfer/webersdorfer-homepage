@@ -28,6 +28,13 @@
    * die enthaltenen Einträge als [{ name, href, isDir }].
    */
   async function fetchDirListing(url) {
+    // GitHub Pages has no Apache directory listing.
+    if (location.hostname.endsWith('.github.io')) {
+      const listing = await fetch(url + '_listing.json', { credentials: 'same-origin' });
+      if (!listing.ok) throw new Error('Dateiliste nicht erreichbar (' + listing.status + ')');
+      return await listing.json();
+    }
+
     const res = await fetch(url, { credentials: 'same-origin' });
     if (!res.ok) throw new Error('Verzeichnis nicht erreichbar (' + res.status + ')');
     const html = await res.text();
