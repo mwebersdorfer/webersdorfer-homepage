@@ -9,8 +9,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="../style.css">
 <link rel="icon" href="data:,">
+<style>
+.about-page .section{padding-top:44px;padding-bottom:44px}
+.about-page .section-title{font:34px/1.15 Georgia,serif;color:#21372a;margin:0 0 20px}
+.about-page .about-timeline{background:#eaece0;max-width:none}
+.about-page .about-timeline>h2,.about-page .about-timeline>.timeline{max-width:68ch}
+.about-page .prose .about-link{display:inline-flex;align-items:center;gap:12px;padding:10px 16px;margin-top:4px;border:1px solid #426044;border-radius:4px;color:#21372a;text-decoration:none;font:14px/1.4 Arial,sans-serif}
+.about-page .prose .about-link:hover{background:#183323;border-color:#183323;color:#fff}
+.about-page .prose .about-link:focus-visible{outline:3px solid #426044;outline-offset:4px}
+@media(max-width:650px){.about-page .section{padding-top:30px;padding-bottom:30px}.about-page .section-title{font-size:30px}}
+</style>
 </head>
-<body>
+<body class="about-page">
 
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
@@ -94,8 +104,11 @@
       <p>Ich arbeite seit über 25 Jahren im FMCG-Vertrieb — mit langjähriger Erfahrung bei Procter &amp; Gamble, zuletzt als Field Sales Manager. Mein Studium zum Diplom-Betriebswirt (FH), Schwerpunkt International Business, habe ich an der Hochschule Darmstadt abgeschlossen.</p>
       <p>Mich interessieren klare Strukturen, verlässliche Zusammenarbeit und Ergebnisse, die tragen — im Beruf ebenso wie privat. Wenn ich nicht arbeite, bin ich oft in der Natur unterwegs, besonders in den Rheinauen rund um den Kühkopf, die für mich ein Stück Zuhause sind.</p>
 
-      <h2>Werdegang in Kürze</h2>
     </div>
+  </section>
+
+  <section class="section about-timeline">
+    <h2 class="section-title">Werdegang in Kürze</h2>
 
     <div class="timeline" style="margin-top: 8px;">
       <div class="timeline-item">
@@ -126,7 +139,7 @@
     <h2 class="section-title">Ausführlicher Lebenslauf</h2>
     <div class="prose">
       <p>Eine ausführliche Übersicht meiner beruflichen Stationen, Qualifikationen und Projekte findet sich auf meiner Bewerbungsseite.</p>
-      <p><a href="https://mwebersdorfer.github.io/marc-webersdorfer-bewerbung/">Zur vollständigen Bewerbungsseite →</a></p>
+      <p><a class="about-link" href="https://mwebersdorfer.github.io/marc-webersdorfer-bewerbung/">Zur vollständigen Bewerbungsseite <span aria-hidden="true">→</span></a></p>
     </div>
   </section>
 
