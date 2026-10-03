@@ -38,6 +38,16 @@
 .family-preview-note{padding:8px var(--edge) 16px;color:#426044;font-size:12px}
 .family-preview-note p{margin:0}
 @media(max-width:650px){.family-dashboard{grid-template-columns:1fr;padding-top:18px}.family-page .page-title{font-size:30px}.family-tile{padding:20px}.tile-heading h2{font-size:25px}}
+
+.calendar-event{display:flex;align-items:flex-start;gap:16px;margin-top:16px}
+.calendar-marker small{display:block;font-size:10px;color:#426044;padding-bottom:4px}
+.event-info{min-width:0}
+.event-info h3{font-size:15px;line-height:1.4;margin:0 0 4px;font-weight:600}
+.family-tile .event-meta{font-size:13px;color:#426044;margin:0 0 8px}
+.event-details{font-size:13px}
+.event-details summary{cursor:pointer;color:#21372a;width:fit-content}
+.event-details summary:focus-visible{outline:2px solid #426044;outline-offset:3px}
+.family-tile .event-details p{margin:8px 0 0;font-size:13px}
 </style>
 </head>
 <body class="family-page">
@@ -111,7 +121,14 @@
     <section class="family-tile tile-green" id="termine">
       <div class="tile-heading"><svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h2M15 14h2M7 17h2"/></svg><h2>Nächste Termine</h2></div>
       <p>Geburtstage, Treffen und gemeinsame Ausflüge.</p>
-      <div class="calendar-empty"><div class="calendar-marker" aria-hidden="true"><span>TERMIN</span><strong>–</strong></div><div><strong>Noch keine Termine eingetragen</strong><p>Hier stehen künftig Datum, Ort und Anlass der nächsten Treffen.</p></div></div>
+      <div class="calendar-event">
+        <div class="calendar-marker" aria-hidden="true"><span>DEZEMBER</span><strong>24</strong><small>2026</small></div>
+        <div class="event-info">
+          <h3>Weihnachten bei Marga</h3>
+          <p class="event-meta"><time datetime="2026-12-24T13:00:00+01:00">24. Dezember 2026 · 13:00 Uhr</time> · Riedstadt</p>
+          <details class="event-details"><summary>Ort &amp; Details</summary><p>Bei Marga<br>Westring 50<br>64560 Riedstadt</p></details>
+        </div>
+      </div>
     </section>
     <section class="family-tile" id="alben">
       <div class="tile-heading"><svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="9" r="1.5"/><path d="m3 17 6-5 4 3 4-5 4 5"/></svg><h2>Unsere Alben</h2></div>
