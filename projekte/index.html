@@ -9,8 +9,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="../style.css">
 <link rel="icon" href="data:,">
+<style>
+.projects-page .section{padding-top:44px;padding-bottom:44px}
+.projects-page .section-title{font:34px/1.15 Georgia,serif;color:#21372a;margin:0 0 24px}
+.projects-page .projects-skills{background:#eaece0;max-width:none}
+.projects-page .card-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.projects-page .info-card{border:0;border-radius:0;padding:0;background:transparent}
+.projects-page .info-card .feature-icon{color:#426044}
+.projects-page .prose .projects-link{display:inline-flex;align-items:center;gap:12px;padding:10px 16px;margin-top:4px;border:1px solid #426044;border-radius:4px;color:#21372a;text-decoration:none;font:14px/1.4 Arial,sans-serif}
+.projects-page .prose .projects-link:hover{background:#183323;border-color:#183323;color:#fff}
+.projects-page .prose .projects-link:focus-visible{outline:3px solid #426044;outline-offset:4px}
+@media(max-width:899px){.projects-page .card-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}}
+@media(max-width:650px){.projects-page .section{padding-top:30px;padding-bottom:30px}.projects-page .section-title{font-size:30px}}
+@media(max-width:480px){.projects-page .card-grid{grid-template-columns:1fr}}
+</style>
 </head>
-<body>
+<body class="projects-page">
 
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
@@ -89,7 +103,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section projects-skills">
     <h2 class="section-title">Erfahrung &amp; Kompetenzen</h2>
     <div class="card-grid">
       <div class="info-card">
@@ -139,7 +153,7 @@
     <h2 class="section-title">Ausführliche Projekte &amp; Lebenslauf</h2>
     <div class="prose">
       <p>Details zu einzelnen Stationen, Projekten und Qualifikationen finden sich auf meiner Bewerbungsseite.</p>
-      <p><a href="https://mwebersdorfer.github.io/marc-webersdorfer-bewerbung/">Zur vollständigen Bewerbungsseite →</a></p>
+      <p><a class="projects-link" href="https://mwebersdorfer.github.io/marc-webersdorfer-bewerbung/">Zur vollständigen Bewerbungsseite <span aria-hidden="true">→</span></a></p>
     </div>
   </section>
 
