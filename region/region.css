@@ -8,3 +8,13 @@
 #region-preview .hero .brand{font:600 22px Inter,Arial,sans-serif;color:#fff}
 
 #region-preview .gallery button{cursor:pointer} #region-preview .gallery button:focus-visible{outline:3px solid #426c3d;outline-offset:4px} #region-preview .expanded button{cursor:pointer} #region-preview .expanded p{margin:10px 0 0}
+
+/* Kennzahlen und weiterführender Link */
+#region-preview .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}
+#region-preview .stats svg{display:block;width:30px;height:30px;margin-bottom:8px;color:#426044}
+#region-preview .stats strong{font-size:18px;line-height:1.3;font-weight:600}
+#region-preview .stats span{display:block;font-size:12px;line-height:1.45;margin-top:4px}
+#region-preview .kuehkopf-link{display:inline-flex;align-items:center;gap:12px;padding:10px 16px;margin-top:4px;border:1px solid #426044;border-radius:4px;color:#21372a;text-decoration:none;font:14px/1.4 Arial,sans-serif}
+#region-preview .kuehkopf-link:hover{background:#183323;border-color:#183323;color:#fff}
+#region-preview .kuehkopf-link:focus-visible{outline:3px solid #426044;outline-offset:4px}
+@media(max-width:400px){#region-preview .stats{gap:10px}#region-preview .stats strong{font-size:16px}#region-preview .stats span{font-size:11px}}
