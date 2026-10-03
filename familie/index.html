@@ -10,8 +10,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="../style.css">
 <link rel="icon" href="data:,">
+<style>
+.family-page .family-sections{display:flex;flex-wrap:wrap;gap:12px 28px;padding:22px var(--edge);border-bottom:1px solid var(--hairline)}
+.family-page .family-sections a{font-size:14px;color:#426044;text-decoration:none}
+.family-page .family-sections a:hover{text-decoration:underline}
+.family-page .family-block{padding-top:36px;padding-bottom:36px;scroll-margin-top:100px}
+.family-page .family-block+.family-block{border-top:0}
+.family-page .section-title{font:34px/1.15 Georgia,serif;color:#21372a;margin:0 0 16px}
+.family-page .family-eyebrow{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#426044;margin:0 0 10px}
+.family-page .family-copy{max-width:68ch;margin:0 0 15px}
+.family-page .family-empty{max-width:68ch;font-size:14px;color:#426044;margin:0 0 18px}
+.family-page .family-tint{background:#eaece0;max-width:none}
+.family-page .family-action{display:inline-flex;align-items:center;gap:12px;padding:10px 16px;border:1px solid #426044;border-radius:4px;color:#21372a;text-decoration:none;font:14px/1.4 Arial,sans-serif}
+.family-page .family-action:hover{background:#183323;border-color:#183323;color:#fff}
+.family-page .family-preview-note{padding:22px var(--edge);font-size:13px;color:#426044}
+.family-page .family-preview-note p{margin:0;max-width:68ch}
+@media(max-width:650px){.family-page .family-block{padding-top:30px;padding-bottom:30px}.family-page .section-title{font-size:30px}.family-page .family-sections{gap:12px 20px}}
+</style>
 </head>
-<body>
+<body class="family-page">
 
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
@@ -69,8 +86,8 @@
   <section class="page-hero">
     <div class="page-hero-inner">
       <p class="page-eyebrow">Familienbereich</p>
-      <h1 class="page-title">Willkommen im geschützten Bereich</h1>
-      <p class="page-lede">Dieser Bereich ist nur für uns — Fotos, Neuigkeiten und Austausch, geschützt außerhalb dieser Seite selbst.</p>
+      <h1 class="page-title">Willkommen in unserem Familienbereich</h1>
+      <p class="page-lede">Ein Ort für gemeinsame Erinnerungen, Neuigkeiten und die nächsten Treffen.</p>
       <a class="back-link" href="../" style="margin-top: 20px;">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 8H3M7 4L3 8l4 4"/></svg>
         Zurück zur Startseite
@@ -78,30 +95,46 @@
     </div>
   </section>
 
-  <section class="section">
-    <h2 class="section-title">Fotos &amp; Videos</h2>
-    <div class="card-grid">
-      <div class="info-card">
-        <div class="feature-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="3" y="5" width="18" height="14" rx="2"/>
-            <circle cx="8.5" cy="10" r="1.5"/>
-            <path d="M21 16l-5.5-5-9.5 8"/>
-          </svg>
-        </div>
-        <h3>Zur Fotogalerie</h3>
-        <p>Alben nach Anlass — Weihnachten, Ostern, Familientreffen. Ansehen und herunterladen.</p>
-        <p style="margin-top: 12px;"><a href="galerie/">Alben ansehen →</a></p>
-      </div>
-    </div>
+  <nav class="family-sections" aria-label="Bereiche für die Familie">
+    <a href="#aktuelles">Aktuelles</a>
+    <a href="#termine">Nächste Termine</a>
+    <a href="#alben">Unsere Alben</a>
+    <a href="#beisteuern">Bilder &amp; Dateien beisteuern</a>
+  </nav>
+
+  <section class="section family-block" id="aktuelles">
+    <p class="family-eyebrow">Neuigkeiten</p>
+    <h2 class="section-title">Aktuelles</h2>
+    <p class="family-copy">Hier gibt es künftig kurze Mitteilungen und Hinweise auf neue Alben – damit ihr auf einen Blick seht, was hinzugekommen ist.</p>
+    <p class="family-empty">Noch keine Neuigkeiten eingetragen.</p>
   </section>
 
-  <section class="section">
-    <div class="family-notice">
-      <h2>Noch im Aufbau</h2>
-      <p>Der Zugriff auf diesen Bereich ist bereits serverseitig geschützt. Eine vollwertige Anmeldung mit Benutzerkonten wird hier später ergänzt — die Struktur der Seite ist so vorbereitet, dass sich eine etablierte Authentifizierungslösung problemlos einfügen lässt, ohne dass private Inhalte jemals nur im Frontend versteckt werden.</p>
-    </div>
+  <section class="section family-block family-tint" id="termine">
+    <p class="family-eyebrow">Gemeinsame Zeit</p>
+    <h2 class="section-title">Nächste Termine</h2>
+    <p class="family-copy">Geburtstage, Familientreffen und gemeinsame Ausflüge – hier findet ihr künftig die nächsten Termine.</p>
+    <p class="family-empty">Sobald ein Termin feststeht, findet ihr hier Datum, Ort und die wichtigsten Informationen.</p>
   </section>
+
+  <section class="section family-block" id="alben">
+    <p class="family-eyebrow">Gemeinsame Erinnerungen</p>
+    <h2 class="section-title">Unsere Alben</h2>
+    <p class="family-copy">Weihnachten, Ostern, Familientreffen oder Urlaub: Fotos und Videos bekommen hier ihren Platz, geordnet nach Anlass und Jahr.</p>
+    <p class="family-empty">Die ersten Alben folgen.</p>
+    <a class="family-action" href="galerie/">Zur Galerie <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section class="section family-block family-tint" id="beisteuern">
+    <p class="family-eyebrow">Erinnerungen teilen</p>
+    <h2 class="section-title">Bilder &amp; Dateien beisteuern</h2>
+    <p class="family-copy">Ihr habt Fotos, Videos oder andere Dateien für unsere Sammlung? Hier könnt ihr sie später mit einem kurzen Hinweis zum Anlass einreichen.</p>
+    <p class="family-copy">Die Beiträge werden zuerst von Marc gesichtet und anschließend in die passenden Alben aufgenommen.</p>
+    <p class="family-empty">Der Upload wird nach Einrichtung des Zugangsschutzes freigeschaltet.</p>
+  </section>
+
+  <aside class="family-preview-note">
+    <p>Hier entsteht unser Familienbereich. Private Inhalte folgen nach Einrichtung des Zugangsschutzes.</p>
+  </aside>
 
 </main>
 
