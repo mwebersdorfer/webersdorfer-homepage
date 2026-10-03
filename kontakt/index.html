@@ -9,8 +9,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="../style.css">
 <link rel="icon" href="data:,">
+<style>
+.contact-page .section{padding-top:44px;padding-bottom:44px}
+.contact-page .section-title{font:34px/1.15 Georgia,serif;color:#21372a;margin:0 0 20px}
+.contact-page .prose .contact-email-button{display:inline-flex;align-items:center;gap:12px;padding:10px 16px;margin-top:4px;border:1px solid #426044;border-radius:4px;color:#21372a;text-decoration:none;font:14px/1.4 Arial,sans-serif}
+.contact-page .prose .contact-email-button:hover{background:#183323;border-color:#183323;color:#fff}
+.contact-page .prose .contact-email-button:focus-visible{outline:3px solid #426044;outline-offset:4px}
+.contact-page .contact-address a{overflow-wrap:anywhere}
+@media(max-width:650px){.contact-page .section{padding-top:30px;padding-bottom:30px}.contact-page .section-title{font-size:30px}}
+</style>
 </head>
-<body>
+<body class="contact-page">
 
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
@@ -90,31 +99,12 @@
   </section>
 
   <section class="section">
-    <form class="contact-form" method="post" action="#">
-      <div class="form-row">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" autocomplete="name" required>
-      </div>
-      <div class="form-row">
-        <label for="email">E-Mail</label>
-        <input id="email" name="email" type="email" autocomplete="email" required>
-      </div>
-      <div class="form-row">
-        <label for="message">Nachricht</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-      <div>
-        <button class="btn-primary" type="submit" style="border:none; cursor:pointer;">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-          Nachricht senden
-        </button>
-      </div>
-    </form>
-
-    <p class="contact-direct">
-      Formular noch ohne Versandanbindung — bitte bis dahin direkt per E-Mail:
-      <a href="mailto:marc@webersdorfer.de">marc@webersdorfer.de</a>
-    </p>
+    <h2 class="section-title">Direkt in Verbindung treten</h2>
+    <div class="prose">
+      <p>Schreiben Sie mir gerne eine E-Mail. Ich freue mich auf Ihre Nachricht.</p>
+      <p><a class="contact-email-button" href="mailto:marc@webersdorfer.de">E-Mail schreiben <span aria-hidden="true">→</span></a></p>
+      <p class="contact-address"><a href="mailto:marc@webersdorfer.de">marc@webersdorfer.de</a></p>
+    </div>
   </section>
 
 </main>
