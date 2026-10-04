@@ -66,7 +66,13 @@
 </nav>
 
 <main id="main"><section class="page-hero"><div class="page-hero-inner"><p class="page-eyebrow">Privatbereich · Organisation</p><h1 class="page-title">Unser Alltag, gut organisiert</h1><p class="page-lede">Dokumente, Termine und Listen – ein gemeinsamer Überblick für uns beide.</p><a class="back-link" href="../">Zur Startseite ←</a></div></section><div class="org-grid"><section class="org-tile"><div class="org-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h7l2 2h9v11H3zM3 7V4h7l2 3"/></svg><h2>Wichtige Dokumente</h2></div><p>Verträge, Versicherungen und Unterlagen für den schnellen Zugriff.</p><div class="org-tags"><span>Verträge</span><span>Versicherungen</span><span>Vollmachten</span><span>Gesundheit</span></div><a class="org-action" href="organisation/dokumente/">Dokumente öffnen <span aria-hidden="true">→</span></a></section>
-<section class="org-tile"><div class="org-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h2M15 14h2"/></svg><h2>Gemeinsamer Kalender</h2></div><p>Die nächsten Termine mit Datum, Uhrzeit und Ort.</p><div class="org-tags"><span>Termine</span><span>Erinnerungen</span></div><a class="org-action" href="organisation/kalender/">Kalender öffnen <span aria-hidden="true">→</span></a></section>
+<section class="org-tile org-calendar"><div class="org-heading"><h2>Gemeinsamer Kalender</h2></div>
+<div class="calendar-toolbar"><button type="button" data-month="-1" aria-label="Vorheriger Monat">‹</button><h3 id="calendar-month" aria-live="polite"></h3><button type="button" data-month="1" aria-label="Nächster Monat">›</button><button type="button" id="calendar-today">Heute</button></div>
+<div class="calendar-weekdays" aria-hidden="true"><span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span></div>
+<div id="calendar-days" class="calendar-days" aria-label="Tage des Monats"></div>
+<div class="calendar-agenda" aria-live="polite"><h3 id="calendar-selected"></h3><div id="calendar-events"></div></div>
+<p class="calendar-pending">Noch keine Termine hinterlegt. Microsoft 365 wird später verbunden.</p>
+<noscript><p>Bitte JavaScript aktivieren, um den Kalender anzuzeigen.</p><a href="organisation/kalender/">Zur Kalenderübersicht</a></noscript></section>
 <section class="org-tile"><div class="org-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h12M9 12h12M9 18h12m-18-13 2 2 3-3m-5 7 2 2 3-3m-5 7 2 2 3-3"/></svg><h2>Listen & Vorbereitungen</h2></div><p>Gemeinsam planen, ergänzen und abhaken.</p><div class="org-tags"><span>Einkaufen</span><span>Urlaub</span><span>Wünsche</span><span>Aufgaben</span></div><a class="org-action" href="organisation/listen/">Listen öffnen <span aria-hidden="true">→</span></a></section>
 <section class="org-tile"><div class="org-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 9-8 9 8M5 10v11h14V10M10 21v-7h4v7"/></svg><h2>Anleitungen & Zugänge</h2></div><p>Wichtiges für Haus, Geräte und gemeinsame Konten.</p><div class="org-tags"><span>Geräte</span><span>Haus & Garten</span><span>Kontakte</span><span>Kontenübersicht</span></div><a class="org-action" href="organisation/anleitungen/">Sammlung öffnen <span aria-hidden="true">→</span></a></section></div><aside class="org-note"><p>Vorschau ohne persönliche Inhalte. Gemeinsame Bearbeitung und Microsoft 365 werden später eingerichtet.</p></aside><aside class="org-note"><a href="galerie/">Zur privaten Fotogalerie →</a></aside></main>
 
@@ -81,5 +87,6 @@
 </footer>
 
 <script src="../nav.js"></script>
+<script src="kalender.js"></script>
 </body>
 </html>
