@@ -1,0 +1,28 @@
+.private-page .page-hero{padding-top:110px;padding-bottom:24px}
+.private-page .page-eyebrow{margin-bottom:8px}
+.private-page .page-title{font-size:36px;line-height:1.15;max-width:none;margin-bottom:10px}
+.private-page .page-lede{font-size:16px;max-width:68ch}
+.private-page .back-link{margin-top:12px;font-size:13px}
+.org-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:24px var(--edge) 12px;max-width:var(--container);margin:auto}
+.org-tile{padding:22px 24px;background:#f0ebdc;border-radius:8px;min-width:0}
+.org-tile:nth-child(1),.org-tile:nth-child(4){background:#eaece0}
+.org-heading{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.org-heading svg{width:26px;height:26px;color:#426044;flex-shrink:0}
+.org-heading h2,.org-section h2{font:27px/1.15 Georgia,serif;margin:0;color:#21372a}
+.org-tile p{font-size:14px;margin:0 0 12px}
+.org-tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.org-tags span,.org-status{display:inline-block;padding:4px 9px;background:#f8f5ec;border-radius:4px;color:#426044;font-size:12px}
+.org-action{display:inline-flex;align-items:center;gap:12px;padding:8px 12px;border:1px solid #426044;border-radius:4px;color:#21372a;text-decoration:none;font:13px/1.4 Arial,sans-serif}
+.org-action:hover{background:#183323;color:white}
+.org-note{padding:8px var(--edge) 16px;font-size:12px;color:#426044}
+.org-note p{margin:0}
+.org-section{padding:28px var(--edge);max-width:var(--container);margin:auto}
+.org-section>p{max-width:68ch}
+.org-categories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0}
+.org-category{background:#eaece0;padding:20px;border-radius:8px}
+.org-category h3{font:22px/1.2 Georgia,serif;margin:0 0 10px}
+.org-category p{font-size:14px;margin:0}
+.org-empty{padding:18px;background:#f0ebdc;border-radius:6px;color:#426044;font-size:14px}
+.org-subnav{display:flex;flex-wrap:wrap;gap:20px;margin-bottom:24px;font-size:14px}
+.org-subnav a[aria-current]{font-weight:600}
+@media(max-width:650px){.org-grid,.org-categories{grid-template-columns:1fr}.private-page .page-title{font-size:30px}.org-tile{padding:20px}.org-heading h2{font-size:25px}}
